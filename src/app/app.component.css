@@ -1,3 +1,7 @@
 mat-slider {
-    width: 300px;
+    width: 100%;
   }
+.slider-container{
+  width:80%;
+  margin:0px auto;
+}
