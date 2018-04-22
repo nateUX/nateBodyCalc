@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'Body Calc';
+  // autoTicks = false;
+  // disabled = false;
+  // invert = false;
+  // max = 100;
+  // min = 0;
+  // showTicks = false;
+  // step = 1;
+  // thumbLabel = false;
+  // value = 0;
+  // vertical = false;
 }

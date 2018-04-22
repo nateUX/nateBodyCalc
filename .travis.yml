@@ -1,0 +1,16 @@
+language: node_js
+
+node_js:
+   - node # will use latest node
+
+before_script: # commands to run before the build step
+   - npm install -g --silent @angular/cli
+   - npm i -g angular-cli-ghpages 
+
+script: # the build step
+   - ng build --prod --base-href "https://nateUX.github.io/nateBodyCalc/"
+   - ngh --repo=https://GH_TOKEN@github.com/nateUX/nateBodyCalc.git
+notifications:
+  email: # only receive email when the build status changes (someone broke the build!) 
+    on_failure: change
+    on_success: change   
