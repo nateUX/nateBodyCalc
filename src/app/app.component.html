@@ -2,17 +2,44 @@
 <mat-toolbar color="primary">
   {{ title }}
 </mat-toolbar>
+<h1 class="mat-headline">Fat Percentage</h1>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Value" [(ngModel)]="bfVal">
+</mat-form-field>
 <div class="slider-container">
-<mat-slider>
-   <!-- [disabled]="disabled"
-    [invert]="invert"
-    [max]="max"
-    [min]="min"
-    [step]="step"
-    [thumb-label]="thumbLabel"
-    [tick-interval]="tickInterval"
-    [value]="value"
-    [vertical]="vertical"> -->
+<mat-slider 
+  [(ngModel)]="bfVal"
+  [max]="bfMax"
+  [min]="bfMin"
+  [step]="step"
+  [thumb-label]="thumbLabel"
+  (input)="onBodyInputChange($event)">
+</mat-slider>
+</div>
+<h1 class="mat-headline">Lean Mass Percentage</h1>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Favorite food" [(ngModel)]="lmVal">
+</mat-form-field>
+<div class="slider-container">
+<mat-slider 
+  [(ngModel)]="lmVal"
+  [max]="lmMax"
+  [min]="lmMin"
+  [step]="step"
+  [thumb-label]="thumbLabel"
+  (input)="onLeanInputChange($event)">
+</mat-slider>
+</div>
+<h1 class="mat-headline">Bone Mass Percentage</h1>
+<mat-form-field class="example-full-width">
+  <input matInput placeholder="Favorite food" [(ngModel)]="bmVal">
+</mat-form-field>
+<div class="slider-container">
+<mat-slider [(ngModel)]="bmVal"
+  [max]="bmMax"
+  [min]="bmMin"
+  [step]="step"
+  [thumb-label]="thumbLabel">
 </mat-slider>
 </div>
 
