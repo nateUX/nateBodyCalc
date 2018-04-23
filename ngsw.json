@@ -10,7 +10,7 @@
         "https://nateUX.github.io/nateBodyCalc/favicon.ico",
         "https://nateUX.github.io/nateBodyCalc/index.html",
         "https://nateUX.github.io/nateBodyCalc/inline.318b50c57b4eba3d437b.bundle.js",
-        "https://nateUX.github.io/nateBodyCalc/main.ee4895813c744a820f65.bundle.js",
+        "https://nateUX.github.io/nateBodyCalc/main.bdea71b6f3f4c10a1994.bundle.js",
         "https://nateUX.github.io/nateBodyCalc/polyfills.b6b2cd0d4c472ac3ac12.bundle.js",
         "https://nateUX.github.io/nateBodyCalc/styles.03b5f5f64d9c4bed131d.bundle.css"
       ],
@@ -33,13 +33,13 @@
   "hashTable": {
     "https://nateUX.github.io/nateBodyCalc/inline.318b50c57b4eba3d437b.bundle.js": "998c6060446975e566fd17509558ddc68d72eec3",
     "https://nateUX.github.io/nateBodyCalc/assets/icon-128x128.png": "f444fd3ae0dbc3be5741ef77cf9d0aa21bcdd9d5",
-    "https://nateUX.github.io/nateBodyCalc/main.ee4895813c744a820f65.bundle.js": "74958de4252384c8e66fa70a267870a31c0a3e32",
+    "https://nateUX.github.io/nateBodyCalc/main.bdea71b6f3f4c10a1994.bundle.js": "06a59f6cd04773046e055230286dbda135365dca",
     "https://nateUX.github.io/nateBodyCalc/assets/icon-152x152.png": "c439eef9906d5a1758700fbbc8ea38d7295eb1bb",
     "https://nateUX.github.io/nateBodyCalc/polyfills.b6b2cd0d4c472ac3ac12.bundle.js": "b092f5c27ff4222179ae3e9e3164c8cc6caa09cf",
     "https://nateUX.github.io/nateBodyCalc/assets/icon-256x256.png": "aa794bf00591bd06c9fee00126b321baa155ee8d",
     "https://nateUX.github.io/nateBodyCalc/styles.03b5f5f64d9c4bed131d.bundle.css": "2d54a334bf71713644c3c2f6aeed7da1ab2a647c",
     "https://nateUX.github.io/nateBodyCalc/assets/icon-512x512.png": "ad9b5746e8a586f161f92b21f97c4cd81b157965",
     "https://nateUX.github.io/nateBodyCalc/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
-    "https://nateUX.github.io/nateBodyCalc/index.html": "3df13d64d8b8416781bf9fb42ec9a474502b33b0"
+    "https://nateUX.github.io/nateBodyCalc/index.html": "644cb474c5f6f9c4e452fead05e757824f831cc4"
   }
 }
