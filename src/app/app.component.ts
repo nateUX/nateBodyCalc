@@ -1,5 +1,6 @@
 import {Component, ViewEncapsulation} from '@angular/core';
 import { MatSlider } from '@angular/material';
+import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 
 @Component({
   selector: 'app-root',
@@ -20,26 +21,30 @@ export class AppComponent {
   // thumbLabel = false;
   value = 0;
   // Body Fat Parameters
-  bfVal = 22.4;
-  bfMin = 10;
-  bfMax = 30;
-  step = .1;
+  bfVal = 25;
+  bfMin = 0;
+  bfMax = 60;
+  step = 0.1;
   thumbLabel = true;
   // Lean Mass Value
-  lmVal = 77.6;
-  lmMin = 70;
-  lmMax = 90;
+  lmVal = 75;
+  lmMin = 40;
+  lmMax = 100;
   // Bone Mass Value
-  bmVal = 0;
-  bmMin = 0;
+  bmVal = 1;
+  bmMin = 1;
   bmMax = 5;
-  // vertical = false;
+
   onLeanInputChange(event: any) {
-    this.lmVal = event.value;
-    this.bfVal = 100 - this.lmVal;
+    this.lmVal = event.target.value;
+    // Rounding fixes some floating point math issues
+    this.bfVal = Math.round((100 - this.lmVal) * 10) / 10;
+    console.log(this.bfVal);
   }
   onBodyInputChange(event: any) {
-    this.bfVal = event.value;
-    this.lmVal = 100 - this.bfVal;
+    this.bfVal = event.target.value;
+    // Rounding fixes some floating point math issues
+    this.lmVal = Math.round((100 - this.bfVal) * 10) / 10;
+    console.log(this.lmVal);
   }
 }

@@ -1,6 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+
+import '../components/fancy-counter/fancy-counter';
+import { html, render } from 'lit-html/lit-html.js';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material';
@@ -14,8 +17,9 @@ import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
     BrowserModule,
     FormsModule,
